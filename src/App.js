@@ -1,6 +1,8 @@
-import Showcase from './Showcase';
-import BaseStats from './BaseStats';
-import './App.css';
+import Showcase from "./Showcase";
+import BaseStats from "./BaseStats";
+import PokeMoves from "./PokeMoves";
+import PokeMoveCard from "./PokeMoveCard";
+import "./App.css";
 
 function App() {
   const baseStats = {
@@ -19,9 +21,10 @@ function App() {
   };
 
   return (
-    <div className='main-wrapper background'>
+    <div className="main-wrapper background">
       <Showcase />
       <BaseStats clicker={handleClick} stats={baseStats} />
+      <PokeMoves />
     </div>
   );
 }
